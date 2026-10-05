@@ -1,0 +1,11 @@
+[functions.stripe-connect]
+verify_jwt = true
+entrypoint = "./functions/stripe-connect/index.ts"
+
+[functions.stripe-webhook]
+verify_jwt = false
+entrypoint = "./functions/stripe-webhook/index.ts"
+
+[functions.stripe-identity]
+verify_jwt = true
+entrypoint = "./functions/stripe-identity/index.ts"
